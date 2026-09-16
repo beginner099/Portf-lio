@@ -1,0 +1,135 @@
+/* 1. CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: #f5f6fa;
+}
+
+/* 2. CABEÇALHO (HEADER) */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: white;
+}
+.logo {
+    color: #5ca4ff; /* Cor azul do logo */
+    font-size: 24px;
+    font-weight: bold;
+}
+nav a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    margin-left: 30px;
+}
+nav a:hover {
+    color: #5ca4ff;
+}
+
+/* 3. SEÇÃO PRINCIPAL (HERO) */
+.hero {
+    background-color: #5ca4ff; /* Azul da referência */
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    gap: 40px; /* Espaço entre a foto e o texto */
+}
+.perfil-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Deixa a imagem redonda */
+    object-fit: cover;
+    border: 4px solid white; /* Borda branca na foto */
+}
+.hero-texto p {
+    margin-bottom: 5px;
+    opacity: 0.9;
+}
+.hero-texto h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+/* 4. SEÇÃO DE PROJETOS */
+.projetos {
+    padding: 60px 50px;
+    text-align: center;
+    background-color: #ebf0f7; /* Fundo levemente cinza/azulado */
+}
+.projetos h2 {
+    color: #333;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+.grid-projetos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Permite que os cards desçam caso a tela seja pequena */
+}
+
+/* 5. CARDS DE CADA PROJETO */
+.card {
+    background-color: white;
+    border: 1px solid #ccc; /* Borda fininha */
+    border-radius: 12px; /* Cantos arredondados */
+    width: 280px;
+    overflow: hidden; /* Corta o que sobrar fora do arredondado */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05); /* Sombra leve */
+}
+.card-img {
+    width: 100%;
+    height: 140px;
+    background-color: #2c3e50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+.card-conteudo {
+    padding: 20px;
+}
+.card-conteudo h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+.card-conteudo p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* 6. RODAPÉ (FOOTER) */
+footer {
+    background-color: #5ca4ff;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 50px;
+    align-items: flex-start;
+}
+.footer-coluna h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.footer-coluna p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    opacity: 0.9;
+}
+.redes-sociais i {
+    font-size: 24px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.redes-sociais i:hover {
+    color: #333;
+}
